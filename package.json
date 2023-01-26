@@ -1,0 +1,15 @@
+{
+  "name": "zip-helper",
+  "version": "1.0.0",
+  "description": "Utility to gzip all worksheets at folder",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "bin": {
+    "g-zip": "./index.js"
+  },
+  "keywords": [],
+  "author": "Bruno Bigotto",
+  "license": "ISC"
+}
