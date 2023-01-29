@@ -4,8 +4,8 @@ const { pipeline } = require('node:stream/promises');
 const {
   createReadStream,
   createWriteStream,
+  readdirSync,
 } = require('node:fs');
-const {readdirSync } = require('node:fs')
 const { cwd } = require('node:process')
 const { extname } = require('node:path')
 
@@ -22,7 +22,7 @@ async function run(file) {
   console.log(`${file} done ✅`);
 }
 
-const FILES_ALLOWED = ['.csv', '.xlxs']
+const FILES_ALLOWED = ['.csv', '.xlsx']
 
 files = readdirSync(cwd());
 files.map(async (file) => {
